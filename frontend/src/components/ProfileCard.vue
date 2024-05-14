@@ -1,0 +1,86 @@
+<template>
+    <!-- <div id="" class="flex g-2 container flex-grow profileContainer items-center"> !-->
+    <div class="profileContainer grid grid-cols-12 items-center flex-grow h-full gap-5">
+        <div class="col-span-4 h-full">
+            <img :src="imageUrl" class="object-contain" alt="Avatar">
+        </div>
+        <div class="col-span-8 md:col-span-5 flex flex-col gap-2">
+            <h1 class="logoFont leading-8 text-2xl">{{ name }}</h1>
+            <div class="flex flex-col gap-0 text-xs subTitle">
+                <p>{{ country }}</p>
+                <p>{{ points }} Points</p>
+                <p>{{ achievements }} Achievements</p>
+                <p>{{ leaderboard }} Leaderboard</p>
+            </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-3 flex grow justify-end items-end h-full subTitle">
+            <button class="profileBtn">View Profile</button>
+        </div>
+    </div>
+</template>
+
+<style>
+.profileContainer {
+    border-radius: 20px;
+    background: var(--gold-highlight, #CF9F30);
+    padding: 24px;
+    height: 268px;
+}
+
+.profileContainer img {
+    border-radius: 248px;
+}
+
+.profileContainer {
+    color: var(--background-color);
+}
+
+.profileBtn {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--background-color);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+.profileBtn:hover {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    color: var(--gold-highlight);
+    transform: scale(1.1);
+}
+</style>
+
+<script>
+export default {
+    data() {
+        return {
+            imageUrl: require('@/assets/imgs/Avatar.png'),
+            name: 'Aisha Jensen Mohamed',
+            country: 'Egylipino',
+            points: 42,
+            leaderboard: 6,
+            achievements: 6
+        }
+    },
+    created() {
+        this.fetchName();
+    },
+    methods: {
+        async fetchName() {
+            try {
+                const response = await fetch('https://api.example.com/name'); // Replace with your API endpoint
+                const data = await response.json();
+                this.name = data.name || this.name;
+                this.country = data.country || this.country;
+                this.points = data.points || this.points;
+                this.leaderboard = data.leaderboard || this.leaderboard;
+                this.achievements = data.achievements || this.achievementsl
+            } catch (error) {
+                console.error('Error fetching name:', error);
+            }
+        }
+    }
+}
+</script>
