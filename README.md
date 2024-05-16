@@ -9,7 +9,7 @@ This repository is just an MVP for `InnovateX Hackathon` and was done in 3 days 
     - [Running the frontend server](#running-the-frontend-server)
 
 ## Introduction
-Imagine a world where every interaction with your government is not just efficient but also engaging, rewarding, and fun. A world where each service you access, from renewing a license to reporting a crime, contributes to a rewarding experience that encourages community participation and fosters a sense of achievement. Today, we TEAM ENJAZ are here to present a transformative concept that turns this vision into a reality." My name is..​
+Imagine a world where every interaction with your government is not just efficient but also engaging, rewarding, and fun. A world where each service you access, from renewing a license to reporting a crime, contributes to a rewarding experience that encourages community participation and fosters a sense of achievement. Today, we TEAM ENJAZ are here to present a transformative concept that turns this vision into a reality.
 Let us take you on a journey to discover what we did for this innovateX hackathon
 
 ## Problem and Solution
