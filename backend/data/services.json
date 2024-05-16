@@ -1,0 +1,56 @@
+[
+    {
+        "imageSrc": "Car.svg",
+        "imageAlt": "Service Logo",
+        "title": "Service 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "buttonText": "Start Now",
+        "buttonLink": "#",
+        "category": "General Services"
+    },
+    {
+        "imageSrc": "Car.svg",
+        "imageAlt": "Service Logo",
+        "title": "Service 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "buttonText": "Start Now",
+        "buttonLink": "#",
+        "category": "Traffic & Licensing"
+    },
+    {
+        "imageSrc": "Car.svg",
+        "imageAlt": "Service Logo",
+        "title": "Service 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "buttonText": "Start Now",
+        "buttonLink": "#",
+        "category": "Civil Defense"
+    },
+    {
+        "imageSrc": "Car.svg",
+        "imageAlt": "Service Logo",
+        "title": "Service 4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "buttonText": "Start Now",
+        "buttonLink": "#",
+        "category": "Crime Security"
+    },
+    {
+        "imageSrc": "Car.svg",
+        "imageAlt": "Service Logo",
+        "title": "Service 5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "buttonText": "Start Now",
+        "buttonLink": "#",
+        "category": "Policing General Head Quarter"
+    },
+    {
+        "imageSrc": "Car.svg",
+        "imageAlt": "Service Logo",
+        "title": "Service 6",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "buttonText": "Start Now",
+        "buttonLink": "#",
+        "category": "Punitive and Reformatory"
+    }
+]

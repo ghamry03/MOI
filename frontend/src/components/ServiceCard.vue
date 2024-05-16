@@ -1,6 +1,6 @@
 <template>
-    <div class="container flex flex-col gap-4">
-        <div class="gap-2">
+    <div class="container flex flex-col gap-5">
+        <div class="gap-4">
             <img :src="imageSrc" :alt="imageAlt">
             <h3>{{ title }}</h3>
         </div>

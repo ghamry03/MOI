@@ -1,5 +1,4 @@
 <template>
-    <!-- <div id="" class="flex g-2 container flex-grow profileContainer items-center"> !-->
     <div class="profileContainer grid grid-cols-12 items-center flex-grow h-full gap-5">
         <div class="col-span-4 h-full">
             <img :src="imageUrl" class="object-contain" alt="Avatar">
@@ -15,7 +14,9 @@
         </div>
 
         <div class="col-span-12 md:col-span-3 flex grow justify-end items-end h-full subTitle">
-            <button class="profileBtn">View Profile</button>
+            <router-link to="/profile">
+                <button class="profileBtn">View Profile</button>
+            </router-link>
         </div>
     </div>
 </template>
@@ -57,8 +58,8 @@ export default {
     data() {
         return {
             imageUrl: require('@/assets/imgs/Avatar.png'),
-            name: 'Aisha Jensen Mohamed',
-            country: 'Egylipino',
+            name: 'Jhon Doe',
+            country: 'Egytian',
             points: 42,
             leaderboard: 6,
             achievements: 6
@@ -70,9 +71,10 @@ export default {
     methods: {
         async fetchName() {
             try {
-                const response = await fetch('https://api.example.com/name'); // Replace with your API endpoint
+                const response = await fetch('http://backend:3000/profile');
                 const data = await response.json();
                 this.name = data.name || this.name;
+                this.imageUrl = require(`@/assets/imgs/${data.imageUrl}`);
                 this.country = data.country || this.country;
                 this.points = data.points || this.points;
                 this.leaderboard = data.leaderboard || this.leaderboard;
@@ -80,7 +82,7 @@ export default {
             } catch (error) {
                 console.error('Error fetching name:', error);
             }
-        }
+        },
     }
 }
 </script>

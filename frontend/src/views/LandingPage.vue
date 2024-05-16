@@ -1,20 +1,17 @@
 <template>
     <div class="flex flex-col gap-9 md:gap-6">
-        <TopBar />
         <TopSection />
         <Services />
     </div>
 </template>
 
 <script>
-import TopBar from './components/TopBar'
-import TopSection from './components/TopSection.vue'
-import Services from './components/ServicesSection.vue'
+import TopSection from '../components/TopSection.vue'
+import Services from '../components/ServicesSection.vue'
 
 export default {
     name: 'App',
     components: {
-        TopBar,
         TopSection,
         Services
     }

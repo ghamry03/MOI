@@ -1,0 +1,39 @@
+services:
+    frontend:
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        container_name: frontend
+        ports:
+            - "8080:8080"
+        volumes:
+            - ../frontend:/app
+        networks:
+            - internal
+        restart: on-failure
+        depends_on:
+            - backend
+
+    backend:
+        build:
+            context: ./backend
+            dockerfile: Dockerfile
+        container_name: backend
+        volumes:
+            - backend_data:/app
+        networks:
+            - internal
+        restart: on-failure
+
+volumes:
+    backend_data:
+        name: backend_data
+        driver: local
+        driver_opts:
+            type: none
+            device: ../backend/
+            o: bind
+
+networks:
+    internal:
+        driver: bridge

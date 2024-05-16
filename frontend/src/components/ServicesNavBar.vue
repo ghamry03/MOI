@@ -1,27 +1,27 @@
 <template>
     <div class="flex justify-between">
-        <div class="flex items-center gap-4 topBarFont sm:text-xs md:text-base overflow-x-auto scroll-smooth">
+        <div class=" flex items-center gap-4 topBarFont sm:text-xs md:text-base overflow-x-auto scroll-smooth">
             <li v-for="item in navItems" :key="item.id" :class="{ selected: item.id === selectedItemId }">
                 <a @click="selectItem(item.id)">{{ item.name }}</a>
             </li>
         </div>
         <div class="search flex">
-            <img src="@/assets/svgs/search.svg" alt="Search icon" class="search-icon"/>
-            <input type="text" placeholder="Search service" class="search-input overflow-auto"/>
+            <img src="@/assets/svgs/search.svg" alt="Search icon" class="search-icon" />
+            <input type="text" placeholder="Search service" class="search-input overflow-auto" />
         </div>
     </div>
 </template>
 
 <style scoped>
 .search-input {
-  border: none;
-  outline: none;
-  font-family: "SF Pro Text";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  background-color: transparent;
-  flex-grow: 1;
+    border: none;
+    outline: none;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    flex-grow: 1;
 }
 
 a {

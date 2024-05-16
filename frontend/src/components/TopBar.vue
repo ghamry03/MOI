@@ -1,11 +1,16 @@
 <template>
     <div class="hidden md:flex topBarContainer flex-row justify-between items-center grid grid-cols-12">
         <div class="flex flex-row align-center items-center col-span-8 gap-6">
-            <div class="flex items-center logoFont col-span-2">
-                <img src="@/assets/imgs/logo.png" alt="Logo" class="object-fill" />
-                <h1 id="logoText" class="leading-7 text-3xl">UAE<br>MOI</h1>
-            </div>
+            <router-link to="/">
+                <div class="flex items-center logoFont col-span-2">
+                    <img src="@/assets/imgs/logo.png" alt="Logo" class="object-fill" />
+                    <h1 id="logoText" class="leading-7 text-3xl">UAE<br>MOI</h1>
+                </div>
+            </router-link>
             <div class="flex gap-4 topBarFont sm:text-xs md:text-base col-span-10">
+                <router-link to="/">
+                    <li>Home</li>
+                </router-link>
                 <li>About MOI</li>
                 <li>E-SERVICES</li>
                 <li>NEWS</li>
@@ -21,7 +26,7 @@
 
     <!-- mobile !-->
     <div @click="toggleMenu" class="flex md:hidden topBarContainer justify-between items-center">
-        <img src="@/assets/svgs/burger.svg" class="object-fit" alt="burger menu"/>
+        <img src="@/assets/svgs/burger.svg" class="object-fit" alt="burger menu" />
         <div class="flex justify-center items-center">
             <h1 id="logoText" class="leading-5 text-2xl font-bold">UAE<br>MOI</h1>
             <img src="@/assets/imgs/logo.png" alt="Logo" class="object-fit" />
@@ -56,8 +61,7 @@ export default {
 </script>
 
 <style scoped>
-.mobileContainer {
-}
+.mobileContainer {}
 
 .topBarContainer img {
     width: 75px;
