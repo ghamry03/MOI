@@ -2,6 +2,7 @@
 
 ## Installation
 - Make sure `npm` and `nodejs` are installed on your system
+- Make sure `node` verision is > `12.0.0`
 - Make sure ports `8080` and `3000` are not being used
 
 #### Running the backend server
