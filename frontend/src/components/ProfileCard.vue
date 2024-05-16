@@ -1,9 +1,9 @@
 <template>
-    <div class="profileContainer grid grid-cols-12 items-center flex-grow h-full gap-5">
-        <div class="col-span-4 h-full">
+    <div class="profileContainer grid grid-cols-1 md:grid-cols-3 items-center flex max-h-full gap-5">
+        <div class="col-span-1 h-full">
             <img :src="imageUrl" class="object-contain" alt="Avatar">
         </div>
-        <div class="col-span-8 md:col-span-5 flex flex-col gap-2">
+        <div class="col-span-1 md:col-span-1 flex flex-col gap-2">
             <h1 class="logoFont leading-8 text-2xl">{{ name }}</h1>
             <div class="flex flex-col gap-0 text-xs subTitle">
                 <p>{{ country }}</p>
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="col-span-12 md:col-span-3 flex grow justify-end items-end h-full subTitle">
+        <div class="col-span-1 md:col-span-1 flex grow justify-end items-end h-full subTitle">
             <router-link to="/profile">
                 <button class="profileBtn">View Profile</button>
             </router-link>
@@ -26,7 +26,6 @@
     border-radius: 20px;
     background: var(--gold-highlight, #CF9F30);
     padding: 24px;
-    height: 268px;
 }
 
 .profileContainer img {

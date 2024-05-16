@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="flex flex-col gap-2">
         <ServicesNavBar />
         <router-link class="grid sm:grid-cols-1 md:grid-cols-3 gap-3" to="/service">
             <ServiceCard v-for="(service, index) in services" :key="index" class="col-span-1"
