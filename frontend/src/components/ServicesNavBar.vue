@@ -16,7 +16,7 @@
 .search-input {
     border: none;
     outline: none;
-    font-family: "SF Pro Text";
+    font-family: "Roboto";
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
@@ -37,8 +37,7 @@ li {
 .unselected {
     color: var(--Gold, #DCBA6A);
 
-    /* Nav Bar */
-    font-family: "SF Pro Text";
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
 }
@@ -46,9 +45,9 @@ li {
 .selected {
     color: var(--gold-highlight, #CF9F30);
 
-    font-family: "SF Pro Text";
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -65,7 +64,7 @@ li {
     padding: 4px 12px;
     align-items: center;
     gap: 8px;
-    font-family: "SF Pro Text";
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     line-height: normal;

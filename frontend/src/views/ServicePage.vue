@@ -23,7 +23,7 @@ export default {
     methods: {
         async fetchSteps() {
             try {
-                const response = await fetch('http://backend:3000/steps');
+                const response = await fetch('http://localhost:3000/steps');
                 const data = await response.json();
                 this.steps = data;
             } catch (error) {

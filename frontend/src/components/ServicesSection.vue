@@ -33,7 +33,7 @@ export default {
             ];
 
             try {
-                const response = await fetch('http://backend:3000/services');
+                const response = await fetch('http://localhost:3000/services');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

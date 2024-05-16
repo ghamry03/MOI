@@ -71,7 +71,7 @@ export default {
     methods: {
         async fetchName() {
             try {
-                const response = await fetch('http://backend:3000/profile');
+                const response = await fetch('http://localhost:3000/profile');
                 const data = await response.json();
                 this.name = data.name || this.name;
                 this.imageUrl = require(`@/assets/imgs/${data.imageUrl}`);

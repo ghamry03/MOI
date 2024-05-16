@@ -17,21 +17,21 @@
 
 <style scoped>
 h3 {
-    font-family: "SF Pro Text";
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
     line-height: 30px;
 }
 
 p {
-    font-family: "SF Pro Text";
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 button {
-    font-family: "SF Pro Text";
+    font-family: "Roboto";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
